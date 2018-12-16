@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="582-hg-GaT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v3N-ke-1hd">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -415,53 +415,35 @@
             </objects>
             <point key="canvasLocation" x="255" y="1575"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="tne-QT-ifu">
+        <!--ArtistCollectionViewController-->
+        <scene sceneID="GaB-om-PA5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PADC_IOS_ArtGallary" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Home" id="Mbo-cP-Li6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Artist" referencedIdentifier="ArtistCollectionViewController" id="Pdr-mV-RQD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6hc-kF-A0H"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAC-rr-OHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="808.24587706146929"/>
+            <point key="canvasLocation" x="2684" y="728"/>
         </scene>
-        <!--Artists-->
-        <scene sceneID="bFG-HL-bfE">
+        <!--MuseumCollectionViewController-->
+        <scene sceneID="F4Z-HE-7je">
             <objects>
-                <viewController id="xST-bd-4dr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vCB-ai-NKA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="huO-29-3Wg"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Artists" id="eLI-XO-Mu0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X8Y-ak-sDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Museum" referencedIdentifier="MuseumCollectionViewController" id="2nR-2Q-gZ5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lkm-lB-kjX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wd-e8-AaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2694" y="784"/>
+            <point key="canvasLocation" x="4858" y="570"/>
         </scene>
-        <!--Museums-->
-        <scene sceneID="uTF-x7-r3p">
+        <!--ArtCollectionViewController-->
+        <scene sceneID="u56-v8-uHW">
             <objects>
-                <viewController id="9KO-Dc-cop" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="brY-Oi-9Bs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Tha-9B-ZBc"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Museums" id="dkW-ec-tUe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b0M-aa-mp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Art" referencedIdentifier="ArtCollectionViewController" id="Ksh-tc-3xw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MO9-co-fga"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEX-dY-mgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4657" y="784"/>
+            <point key="canvasLocation" x="602" y="699"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Srb-KQ-Ogw">
@@ -497,7 +479,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Of1-PW-qk4"/>
+                        <segue destination="Ksh-tc-3xw" kind="relationship" relationship="rootViewController" id="i0l-LS-Rc0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lou-y9-zqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -507,20 +489,19 @@
         <!--Artists-->
         <scene sceneID="bwb-NR-Wa2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyv-do-huv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o37-p2-KLV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Artists" image="ic_artist" id="2bH-WF-uMY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="soG-YW-WYb">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.6705882353" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="xST-bd-4dr" kind="relationship" relationship="rootViewController" id="i13-mo-yqE"/>
+                        <segue destination="Pdr-mV-RQD" kind="relationship" relationship="rootViewController" id="vT3-Nm-AYr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eyv-do-huv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1737" y="784"/>
         </scene>
@@ -533,11 +514,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VD0-7h-Oet">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.6705882353" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9KO-Dc-cop" kind="relationship" relationship="rootViewController" id="ugg-2Z-d1e"/>
+                        <segue destination="2nR-2Q-gZ5" kind="relationship" relationship="rootViewController" id="OVe-i8-KQ5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mrx-iv-5Bm" userLabel="First Responder" sceneMemberID="firstResponder"/>
