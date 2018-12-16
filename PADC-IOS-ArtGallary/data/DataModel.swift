@@ -48,6 +48,17 @@ class DataModel {
         
     }
     
+    func loadArts(success : @escaping ([ArtVO]) -> Void, failure : @escaping (String) -> Void) {
+        
+        NetworkManager.shared.loadArts(success: { (data) in
+            print(data.count)
+            success(data)
+        }, failure: { (error) in
+            failure(error)
+        })
+        
+    }
+    
    
     
 }

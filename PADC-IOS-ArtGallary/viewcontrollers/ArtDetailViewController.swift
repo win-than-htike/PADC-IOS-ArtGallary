@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ArtDetailViewController: UIViewController {
 
     @IBOutlet weak var cvRelatedArtList: UICollectionView!
     @IBOutlet weak var ivFullScreen: UIImageView!
+    @IBOutlet weak var ivArt: UIImageView!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var ivArtist: UIImageView!
+    @IBOutlet weak var lblArtistName: UILabel!
+    @IBOutlet weak var lblMedium: UILabel!
+    
+    @IBOutlet weak var lblArtTitle: UILabel!
+    
+    var art: ArtVO?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +33,13 @@ class ArtDetailViewController: UIViewController {
         ivFullScreen.isUserInteractionEnabled = true
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(onClickFullScreen))
         ivFullScreen.addGestureRecognizer(recognizer)
+        
+        ivArt.sd_setImage(with: URL(string: art!.artImage), placeholderImage: UIImage(named: "dummy_cell"))
+        lblDescription.text = art?.description
+        lblArtTitle.text = art?.artTitle
+        lblMedium.text = art?.medium
+        ivArtist.sd_setImage(with: URL(string: (art?.artistForArt?.image)!))
+        lblArtistName.text = art?.artistForArt?.artistName
     }
     
     @IBAction func clickFavorite(_ sender: Any) {
@@ -35,6 +52,7 @@ class ArtDetailViewController: UIViewController {
     
     @objc func onClickFullScreen() {
         let fullViewController = self.storyboard?.instantiateViewController(withIdentifier: "FullScreenViewController") as! FullScreenViewController
+        fullViewController.image = art?.artImage
         self.present(fullViewController, animated: true, completion: nil)
     }
     

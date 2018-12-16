@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FullScreenViewController: UIViewController {
 
+    @IBOutlet weak var ivFull: UIImageView!
+    var image: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ivFull.sd_setImage(with: URL(string: image!), placeholderImage: UIImage(named: "dummy_cell"))
         // Do any additional setup after loading the view.
     }
 

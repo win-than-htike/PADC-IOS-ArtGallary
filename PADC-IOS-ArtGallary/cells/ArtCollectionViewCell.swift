@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ArtCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var ivArt: UIImageView!
+    var artImage : String?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+//        ivArt.sd_setImage(with: URL(string: artImage!))
+        
     }
 
 }

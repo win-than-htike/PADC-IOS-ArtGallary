@@ -141,6 +141,7 @@ PODS:
   - SDWebImage/WebP (4.4.2):
     - libwebp (~> 0.5)
     - SDWebImage/Core
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - FBSDKLoginKit
@@ -151,6 +152,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - GoogleSignIn
   - SDWebImage/WebP
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -178,6 +180,7 @@ SPEC REPOS:
     - nanopb
     - Protobuf
     - SDWebImage
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -204,7 +207,8 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 978de65d43348b512d73fa5e11776a8b617e26c0
+PODFILE CHECKSUM: b349e5a57e4a8d7033e854c6bb9a4af122cac2f6
 
 COCOAPODS: 1.5.3

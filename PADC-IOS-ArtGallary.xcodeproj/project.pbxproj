@@ -23,6 +23,9 @@
 		7591A7D921C5D93B00C0B844 /* Museum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7591A7D821C5D93B00C0B844 /* Museum.storyboard */; };
 		7591A7DD21C5DAF100C0B844 /* MuseumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7DC21C5DAF100C0B844 /* MuseumCollectionViewController.swift */; };
 		7591A7DF21C5E2D600C0B844 /* MuseumHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7DE21C5E2D600C0B844 /* MuseumHistoryViewController.swift */; };
+		7591A7E121C64F1700C0B844 /* ArtVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7E021C64F1700C0B844 /* ArtVO.swift */; };
+		7591A7E321C64F5300C0B844 /* ArtDimenVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7E221C64F5300C0B844 /* ArtDimenVO.swift */; };
+		7591A7E521C64F6800C0B844 /* ArtistForArtVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7E421C64F6800C0B844 /* ArtistForArtVO.swift */; };
 		99C090F521B3B3B0000F6CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C090F421B3B3B0000F6CAE /* Assets.xcassets */; };
 		99C090F821B3B3B0000F6CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C090F621B3B3B0000F6CAE /* LaunchScreen.storyboard */; };
 		A91AAA7F21C6368C008E5813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91AAA7E21C6368C008E5813 /* ViewController.swift */; };
@@ -66,6 +69,9 @@
 		7591A7D821C5D93B00C0B844 /* Museum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Museum.storyboard; sourceTree = "<group>"; };
 		7591A7DC21C5DAF100C0B844 /* MuseumCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumCollectionViewController.swift; sourceTree = "<group>"; };
 		7591A7DE21C5E2D600C0B844 /* MuseumHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumHistoryViewController.swift; sourceTree = "<group>"; };
+		7591A7E021C64F1700C0B844 /* ArtVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtVO.swift; sourceTree = "<group>"; };
+		7591A7E221C64F5300C0B844 /* ArtDimenVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDimenVO.swift; sourceTree = "<group>"; };
+		7591A7E421C64F6800C0B844 /* ArtistForArtVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistForArtVO.swift; sourceTree = "<group>"; };
 		902EE4005532DF3957BA78DC /* Pods_PADC_IOS_ArtGallary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_ArtGallary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C090EA21B3B3AF000F6CAE /* PADC-IOS-ArtGallary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-ArtGallary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C090ED21B3B3AF000F6CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +180,9 @@
 			children = (
 				A97DB75321C6252C002B9932 /* UserVO.swift */,
 				A9941EDC21C64AB00008F93B /* GallaryVO.swift */,
+				7591A7E021C64F1700C0B844 /* ArtVO.swift */,
+				7591A7E221C64F5300C0B844 /* ArtDimenVO.swift */,
+				7591A7E421C64F6800C0B844 /* ArtistForArtVO.swift */,
 			);
 			path = vos;
 			sourceTree = "<group>";
@@ -357,6 +366,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -374,6 +384,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -417,6 +428,7 @@
 				A9EE031621C4ED38000763AD /* ShadowTextField.swift in Sources */,
 				A9941ED721C637E00008F93B /* AppDelegate.swift in Sources */,
 				A97DB74721C50F7D002B9932 /* Extensions.swift in Sources */,
+				7591A7E521C64F6800C0B844 /* ArtistForArtVO.swift in Sources */,
 				A97DB75121C624BE002B9932 /* DataModel.swift in Sources */,
 				A97DB74B21C5198C002B9932 /* FavViewController.swift in Sources */,
 				A97DB74321C50CEB002B9932 /* BaseViewController.swift in Sources */,
@@ -430,10 +442,12 @@
 				7591A7D121C5105E00C0B844 /* ArtistCollectionViewController.swift in Sources */,
 				7591A7D621C5D6E600C0B844 /* MuseumCollectionViewCell.swift in Sources */,
 				7591A7DD21C5DAF100C0B844 /* MuseumCollectionViewController.swift in Sources */,
+				7591A7E321C64F5300C0B844 /* ArtDimenVO.swift in Sources */,
 				7591A7DF21C5E2D600C0B844 /* MuseumHistoryViewController.swift in Sources */,
 				757D8F9A21C4DF220010C524 /* CellRegisterUtils.swift in Sources */,
 				A91AAA7F21C6368C008E5813 /* ViewController.swift in Sources */,
 				7591A7D321C51A8900C0B844 /* ArtistBioViewController.swift in Sources */,
+				7591A7E121C64F1700C0B844 /* ArtVO.swift in Sources */,
 				757D8F9D21C4DF740010C524 /* ArtCollectionViewController.swift in Sources */,
 				757D8F9721C4DE290010C524 /* ArtCollectionViewCell.swift in Sources */,
 				7591A7CB21C50B5E00C0B844 /* FullScreenViewController.swift in Sources */,
