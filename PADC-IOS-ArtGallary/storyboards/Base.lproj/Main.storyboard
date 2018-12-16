@@ -467,11 +467,11 @@
             </objects>
             <point key="canvasLocation" x="5164" y="-655"/>
         </scene>
-        <!--Home-->
+        <!--Arts-->
         <scene sceneID="9gE-gJ-D2G">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BvK-9O-BCN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="ic_home" id="WwA-bB-i1I"/>
+                    <tabBarItem key="tabBarItem" title="Arts" image="ic_home" id="WwA-bB-i1I"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jpw-9q-2Jk">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -505,11 +505,11 @@
             </objects>
             <point key="canvasLocation" x="1737" y="784"/>
         </scene>
-        <!--Museums-->
+        <!--Gallaries-->
         <scene sceneID="6R3-ag-8rr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aMP-ai-60g" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Museums" image="ic_museum" id="IC7-L8-Iul"/>
+                    <tabBarItem key="tabBarItem" title="Gallaries" image="ic_museum" id="IC7-L8-Iul"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VD0-7h-Oet">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

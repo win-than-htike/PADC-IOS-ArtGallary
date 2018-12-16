@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-588" y="145"/>
         </scene>
-        <!--Museums-->
+        <!--Gallaries-->
         <scene sceneID="g7d-bC-bkF">
             <objects>
                 <collectionViewController storyboardIdentifier="MuseumCollectionViewController" id="GYa-4I-HlQ" customClass="MuseumCollectionViewController" customModule="PADC_IOS_ArtGallary" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="GYa-4I-HlQ" id="0lD-6s-JBf"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Museums" id="iDB-jU-TOh"/>
+                    <navigationItem key="navigationItem" title="Gallaries" id="iDB-jU-TOh"/>
                     <connections>
                         <outlet property="cvMuseumList" destination="884-sF-Ovj" id="X6F-1L-ZEX"/>
                     </connections>
