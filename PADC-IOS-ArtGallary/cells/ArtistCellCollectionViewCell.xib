@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ArtistCellCollectionViewCell" customModule="PADC_IOS_ArtGallary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YmS-Bl-cnj">
+                        <rect key="frame" x="0.0" y="0.0" width="281" height="179"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_cell" translatesAutoresizingMaskIntoConstraints="NO" id="Cdx-PF-Igu">
+                                <rect key="frame" x="90.5" y="16" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0Bt-bH-IEE"/>
+                                    <constraint firstAttribute="width" constant="100" id="2qu-q1-sp1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zaw Zin Phyo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JP5-j8-EzX">
+                                <rect key="frame" x="16" y="132" width="249" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cdx-PF-Igu" firstAttribute="top" secondItem="YmS-Bl-cnj" secondAttribute="top" constant="16" id="Lan-vh-dzS"/>
+                            <constraint firstItem="Cdx-PF-Igu" firstAttribute="centerX" secondItem="YmS-Bl-cnj" secondAttribute="centerX" id="PlC-G4-7ag"/>
+                            <constraint firstAttribute="bottom" secondItem="JP5-j8-EzX" secondAttribute="bottom" constant="16" id="hED-lI-19r"/>
+                            <constraint firstItem="JP5-j8-EzX" firstAttribute="leading" secondItem="YmS-Bl-cnj" secondAttribute="leading" constant="16" id="qw6-dn-z1z"/>
+                            <constraint firstItem="JP5-j8-EzX" firstAttribute="top" secondItem="Cdx-PF-Igu" secondAttribute="bottom" constant="16" id="tyO-jT-P7q"/>
+                            <constraint firstAttribute="trailing" secondItem="JP5-j8-EzX" secondAttribute="trailing" constant="16" id="zlP-Na-V0T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="YmS-Bl-cnj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1r1-qe-4cM"/>
+                <constraint firstAttribute="trailing" secondItem="YmS-Bl-cnj" secondAttribute="trailing" id="4Mu-KE-w2o"/>
+                <constraint firstAttribute="bottom" secondItem="YmS-Bl-cnj" secondAttribute="bottom" id="6nW-Qw-DcV"/>
+                <constraint firstItem="YmS-Bl-cnj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eim-Sb-onk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="281" height="179"/>
+            <point key="canvasLocation" x="314.39999999999998" y="156.07196401799101"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dummy_cell" width="1920" height="1080"/>
+    </resources>
+</document>
