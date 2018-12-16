@@ -36,7 +36,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>Art</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Art</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

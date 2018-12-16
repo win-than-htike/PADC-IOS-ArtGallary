@@ -78,6 +78,7 @@ class NetworkManager {
                 success(gallaryList)
             }
         }
+    }
       
     func loadArts(success: @escaping ([ArtVO]) -> Void, failure: @escaping (String) -> Void) {
         

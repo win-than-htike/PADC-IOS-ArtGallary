@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 private let reuseIdentifier = "MuseumCollectionViewCell"
 
@@ -25,6 +26,7 @@ class MuseumCollectionViewController: UICollectionViewController, UICollectionVi
     
     private func getGallaries() {
         DataModel.shared.getGallaries(success: { (data) in
+            self.gallaryList.removeAll()
             self.gallaryList = data
             self.cvMuseumList.reloadData()
         }, failure: {
@@ -32,9 +34,12 @@ class MuseumCollectionViewController: UICollectionViewController, UICollectionVi
         })
     }
 
-    func aboutMuseum() {
+    func aboutMuseum(gallery : GallaryVO) {
         let nc = self.storyboard?.instantiateViewController(withIdentifier: "MuseumHistoryViewController") as! UINavigationController
-        _ = nc.viewControllers[0] as! MuseumHistoryViewController
+        let vc = nc.viewControllers[0] as! MuseumHistoryViewController
+        
+        vc.gallery = gallery
+
         self.present(nc, animated: true, completion: nil)
     }
     
@@ -52,8 +57,9 @@ class MuseumCollectionViewController: UICollectionViewController, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MuseumCollectionViewCell
     
         // Configure the cell
-        cell.gallaryName = self.gallaryList[indexPath.row].gallaryName ?? "default value"
-        cell.gallaryImage = self.gallaryList[indexPath.row].gallaryImage ?? "default value"
+
+        cell.lblGallaryName.text = self.gallaryList[indexPath.row].gallaryName
+        cell.imgGallary.sd_setImage(with: URL(string: self.gallaryList[indexPath.row].gallaryImage!), placeholderImage: UIImage(named: "dummy_cell"))
         return cell
     }
 
@@ -63,7 +69,7 @@ class MuseumCollectionViewController: UICollectionViewController, UICollectionVi
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        aboutMuseum()
+        aboutMuseum(gallery: gallaryList[indexPath.row])
     }
 }
 

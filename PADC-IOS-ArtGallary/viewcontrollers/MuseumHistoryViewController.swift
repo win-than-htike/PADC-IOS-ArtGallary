@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MuseumHistoryViewController: UIViewController {
     
@@ -14,8 +15,14 @@ class MuseumHistoryViewController: UIViewController {
     @IBOutlet weak var lblGallaryName: UILabel!
     @IBOutlet weak var lblAbout: UILabel!
     
+    var gallery: GallaryVO?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imgGallaryImage.sd_setImage(with: URL(string: (gallery!.gallaryImage)!), placeholderImage: UIImage(named: "dummy_cell"))
+        lblGallaryName.text = gallery?.gallaryName
+        lblAbout.text = gallery?.about
     }
 
     @IBAction func back(_ sender: Any) {

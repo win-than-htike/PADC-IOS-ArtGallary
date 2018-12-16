@@ -26,14 +26,14 @@
                                 <rect key="frame" x="8" y="8" width="272" height="276"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsX-AV-z7W">
-                                <rect key="frame" x="8" y="240.5" width="272" height="35.5"/>
+                                <rect key="frame" x="8" y="248.5" width="272" height="35.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="LE4-Th-XPC"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-FL-L6l">
-                                <rect key="frame" x="16" y="248.5" width="256" height="27.5"/>
+                                <rect key="frame" x="16" y="256.5" width="256" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -49,7 +49,7 @@
                             <constraint firstAttribute="bottom" secondItem="fOz-nm-yd8" secondAttribute="bottom" id="TWn-Qr-fCI"/>
                             <constraint firstItem="cdE-FL-L6l" firstAttribute="leading" secondItem="zX2-cX-aTZ" secondAttribute="leading" constant="16" id="U2s-4l-W0P"/>
                             <constraint firstAttribute="trailing" secondItem="cdE-FL-L6l" secondAttribute="trailing" constant="16" id="ekx-E5-64c"/>
-                            <constraint firstAttribute="bottom" secondItem="DsX-AV-z7W" secondAttribute="bottom" constant="8" id="fWG-SR-Fu7"/>
+                            <constraint firstAttribute="bottom" secondItem="DsX-AV-z7W" secondAttribute="bottom" id="fWG-SR-Fu7"/>
                             <constraint firstItem="fOz-nm-yd8" firstAttribute="leading" secondItem="zX2-cX-aTZ" secondAttribute="leading" constant="8" id="yaE-bR-vN8"/>
                             <constraint firstAttribute="trailing" secondItem="DsX-AV-z7W" secondAttribute="trailing" constant="8" id="zV6-cG-E0Y"/>
                         </constraints>
