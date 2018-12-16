@@ -39,10 +39,8 @@ class UserVO {
             "phone" : user.phone ?? "",
             "password" : user.password ?? "",
             "address": user.address ?? "",
-            "profileImage": user.profileImage ?? "",
-            "isArtist": user.isArtist ?? false,
-            "biography": user.biography ?? "",
-            "dob": user.dob ?? ""
+            "profileImage": user.profileImage ?? ""
+
         ]
         
         return value
@@ -57,7 +55,7 @@ class UserVO {
         user.email = json["email"] as? String
         user.password = json["password"] as? String
         user.address = json["address"] as? String
-        user.profileImage = json["profileImage"] as! String
+        user.profileImage = json["profileImage"] as? String
         return user
         
     }
