@@ -64,4 +64,27 @@ class NetworkManager {
         
     }
     
+    func loadGallaries(success : @escaping ([GallaryVO]) -> Void, failure : @escaping () -> Void) {
+        rootRef.child("artGallaries").observe(.value) { (dataSnapshot) in
+            if let gallaries = dataSnapshot.children.allObjects as? [DataSnapshot] {
+                
+                var gallaries : [GallaryVO] = []
+                
+                for gallary in gallaries {
+                    
+                    if let value = gallary. as? [String : AnyObject] {
+                        
+                        gallaries.append(GallaryVO.parseToGallaryVO(json: value))
+                        
+                    }
+                    
+                }
+                
+                success(gallaries)
+                
+            }
+            
+        }
+    }
+    
 }
