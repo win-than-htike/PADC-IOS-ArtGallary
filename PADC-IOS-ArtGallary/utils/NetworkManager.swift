@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 import FirebaseStorage
 import FirebaseDatabase
+import SwiftyJSON
 
 class NetworkManager {
     
@@ -63,6 +64,7 @@ class NetworkManager {
         }
     }
     
+
     func loadGallaries(success: @escaping ([GallaryVO]) -> Void, failure: @escaping () -> Void) {
         rootRef.child("artGallaries").observe(.value) { (dataSnapshot) in
             if let gallaries = dataSnapshot.children.allObjects as? [DataSnapshot] {
@@ -76,6 +78,23 @@ class NetworkManager {
                 success(gallaryList)
             }
         }
+      
+    func loadArts(success: @escaping ([ArtVO]) -> Void, failure: @escaping (String) -> Void) {
+        
+        rootRef.child("artWorks").observe(.value, with: { (dataSnapshot) in
+            if let arts = dataSnapshot.children.allObjects as? [DataSnapshot] {
+                var artList : [ArtVO] = []
+                for art in arts {
+                    if let value = art.value as? [String : Any] {
+                        artList.append(ArtVO.parseToArtVO(json : value))
+                        print("ArtList Count ->> \(ArtVO.parseToArtVO(json : value).artImage as! String)")
+                    }
+                }
+                success(artList)
+            }
+            
+        })
+        
     }
     
 }
