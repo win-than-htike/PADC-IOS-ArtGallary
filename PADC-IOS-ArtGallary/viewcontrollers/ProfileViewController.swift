@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class ProfileViewController: UIViewController {
     
@@ -22,6 +23,10 @@ class ProfileViewController: UIViewController {
         let tag = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         imgUploadImg.isUserInteractionEnabled = true
         imgUploadImg.addGestureRecognizer(tag)
+        
+        lblName.text = DataModel.shared.user?.username
+        lblEmail.text = DataModel.shared.user?.email
+        imgProfile.sd_setImage(with: URL(string: (DataModel.shared.user?.profileImage)!))
     }
     
     
@@ -32,7 +37,9 @@ class ProfileViewController: UIViewController {
     
     @IBAction func onTapLogout(_ sender: Any) {
         //Logout the user and show login view
-        print("user logout")
+        GIDSignIn.sharedInstance()?.signOut()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
 }

@@ -30,7 +30,7 @@ class NetworkManager {
         return networkManager
     }()
     
-    func login(email : String, password : String, success : @escaping (UserVO) -> Void, failure : @escaping () -> Void) {
+    func login(email : String, password : String, success : @escaping (UserVO) -> Void, failure : @escaping (String) -> Void) {
         
         rootRef.child("users").observe(.value) { (dataSnapshot) in
             
@@ -49,7 +49,7 @@ class NetworkManager {
                             success(userVO)
                             return
                         } else {
-                            
+                            failure("failed")
                         }
                         
                     } else {
