@@ -13,13 +13,23 @@ private let reuseIdentifier = "MuseumCollectionViewCell"
 class MuseumCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet var cvMuseumList: UICollectionView!
+    
+    var gallaryList: [GallaryVO] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
         // Register cell classes
         CellRegsiterUtil.collectionCellRegister(nibName: reuseIdentifier, collectionView: self.cvMuseumList)
-
+        getGallaries();
+    }
+    
+    private func getGallaries() {
+        DataModel.shared.getGallaries(success: { (data) in
+            self.gallaryList = data
+            self.cvMuseumList.reloadData()
+        }, failure: {
+            print("Failed to load gallaries")
+        })
     }
 
     func aboutMuseum() {
@@ -33,17 +43,17 @@ class MuseumCollectionViewController: UICollectionViewController, UICollectionVi
         return 1
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return gallaryList.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MuseumCollectionViewCell
     
         // Configure the cell
-    
+        cell.gallaryName = self.gallaryList[indexPath.row].gallaryName ?? "default value"
+        cell.gallaryImage = self.gallaryList[indexPath.row].gallaryImage ?? "default value"
         return cell
     }
 
@@ -56,3 +66,4 @@ class MuseumCollectionViewController: UICollectionViewController, UICollectionVi
         aboutMuseum()
     }
 }
+
