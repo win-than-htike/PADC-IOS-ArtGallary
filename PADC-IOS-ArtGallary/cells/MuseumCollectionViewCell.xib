@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MuseumCollectionViewCell" customModule="PADC_IOS_ArtGallary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="284"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="284"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX2-cX-aTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="284"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_cell" translatesAutoresizingMaskIntoConstraints="NO" id="fOz-nm-yd8">
+                                <rect key="frame" x="8" y="8" width="272" height="276"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsX-AV-z7W">
+                                <rect key="frame" x="8" y="240.5" width="272" height="35.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="LE4-Th-XPC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-FL-L6l">
+                                <rect key="frame" x="16" y="248.5" width="256" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DsX-AV-z7W" firstAttribute="bottom" secondItem="cdE-FL-L6l" secondAttribute="bottom" id="2vT-PC-Vb8"/>
+                            <constraint firstItem="DsX-AV-z7W" firstAttribute="leading" secondItem="zX2-cX-aTZ" secondAttribute="leading" constant="8" id="DGV-r9-Dcf"/>
+                            <constraint firstAttribute="trailing" secondItem="fOz-nm-yd8" secondAttribute="trailing" constant="8" id="N4G-Li-QvU"/>
+                            <constraint firstItem="cdE-FL-L6l" firstAttribute="top" secondItem="DsX-AV-z7W" secondAttribute="top" constant="8" id="Oet-ss-VEj"/>
+                            <constraint firstItem="fOz-nm-yd8" firstAttribute="top" secondItem="zX2-cX-aTZ" secondAttribute="top" constant="8" id="Rr6-vm-SaM"/>
+                            <constraint firstAttribute="bottom" secondItem="fOz-nm-yd8" secondAttribute="bottom" id="TWn-Qr-fCI"/>
+                            <constraint firstItem="cdE-FL-L6l" firstAttribute="leading" secondItem="zX2-cX-aTZ" secondAttribute="leading" constant="16" id="U2s-4l-W0P"/>
+                            <constraint firstAttribute="trailing" secondItem="cdE-FL-L6l" secondAttribute="trailing" constant="16" id="ekx-E5-64c"/>
+                            <constraint firstAttribute="bottom" secondItem="DsX-AV-z7W" secondAttribute="bottom" constant="8" id="fWG-SR-Fu7"/>
+                            <constraint firstItem="fOz-nm-yd8" firstAttribute="leading" secondItem="zX2-cX-aTZ" secondAttribute="leading" constant="8" id="yaE-bR-vN8"/>
+                            <constraint firstAttribute="trailing" secondItem="DsX-AV-z7W" secondAttribute="trailing" constant="8" id="zV6-cG-E0Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zX2-cX-aTZ" secondAttribute="bottom" id="DkK-Kh-sYe"/>
+                <constraint firstItem="zX2-cX-aTZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Krh-4Q-mev"/>
+                <constraint firstAttribute="trailing" secondItem="zX2-cX-aTZ" secondAttribute="trailing" id="SZH-zt-ExE"/>
+                <constraint firstItem="zX2-cX-aTZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aa2-3f-TLv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="288" height="284"/>
+            <point key="canvasLocation" x="232" y="182.60869565217394"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dummy_cell" width="1920" height="1080"/>
+    </resources>
+</document>
