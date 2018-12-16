@@ -61,29 +61,20 @@ class NetworkManager {
             }
             
         }
-        
     }
     
-    func loadGallaries(success : @escaping ([GallaryVO]) -> Void, failure : @escaping () -> Void) {
+    func loadGallaries(success: @escaping ([GallaryVO]) -> Void, failure: @escaping () -> Void) {
         rootRef.child("artGallaries").observe(.value) { (dataSnapshot) in
             if let gallaries = dataSnapshot.children.allObjects as? [DataSnapshot] {
-                
-                var gallaries : [GallaryVO] = []
-                
+                var gallaryList : [GallaryVO] = []
                 for gallary in gallaries {
-                    
-                    if let value = gallary. as? [String : AnyObject] {
-                        
-                        gallaries.append(GallaryVO.parseToGallaryVO(json: value))
-                        
+                    if let value = gallary.value as? [String: Any] {
+                        gallaryList.append(GallaryVO.parseToGallaryVO(json: value))
+                        print("g \(GallaryVO.parseToGallaryVO(json: value).gallaryName)")
                     }
-                    
                 }
-                
-                success(gallaries)
-                
+                success(gallaryList)
             }
-            
         }
     }
     

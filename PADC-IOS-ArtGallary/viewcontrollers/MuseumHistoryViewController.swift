@@ -9,11 +9,13 @@
 import UIKit
 
 class MuseumHistoryViewController: UIViewController {
-
+    
+    @IBOutlet weak var imgGallaryImage: UIImageView!
+    @IBOutlet weak var lblGallaryName: UILabel!
+    @IBOutlet weak var lblAbout: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func back(_ sender: Any) {

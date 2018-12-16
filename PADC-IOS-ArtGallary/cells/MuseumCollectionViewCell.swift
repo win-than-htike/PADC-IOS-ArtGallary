@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MuseumCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imgGallary: UIImageView!
+    @IBOutlet weak var lblGallaryName: UILabel!
+    
+    var gallaryName: String = ""
+     var gallaryImage: String = ""
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        lblGallaryName.text = gallaryName
+        imgGallary.sd_setImage(with: URL(string: gallaryImage))
+    
     }
+    
 
 }

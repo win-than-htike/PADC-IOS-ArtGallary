@@ -168,6 +168,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="851"/>
+                    <connections>
+                        <outlet property="imgGallaryImage" destination="x5x-KI-OQu" id="0dY-r1-Fat"/>
+                        <outlet property="lblAbout" destination="e9E-Ru-bha" id="YO6-qg-eXa"/>
+                        <outlet property="lblGallaryName" destination="Ahq-Ep-quh" id="oIH-CM-qcf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0H8-X5-V2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -489,7 +489,6 @@
         <!--Artists-->
         <scene sceneID="bwb-NR-Wa2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eyv-do-huv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o37-p2-KLV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Artists" image="ic_artist" id="2bH-WF-uMY"/>
                     <toolbarItems/>
@@ -502,6 +501,7 @@
                         <segue destination="Pdr-mV-RQD" kind="relationship" relationship="rootViewController" id="vT3-Nm-AYr"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyv-do-huv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1737" y="784"/>
         </scene>
