@@ -38,6 +38,7 @@
 		A9941ED721C637E00008F93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C090ED21B3B3AF000F6CAE /* AppDelegate.swift */; };
 		A9941ED821C637E00008F93B /* Artist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C090F121B3B3AF000F6CAE /* Artist.storyboard */; };
 		A9941EDB21C638560008F93B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9941ED921C638560008F93B /* Main.storyboard */; };
+		A9941EDD21C64AB00008F93B /* GallaryVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9941EDC21C64AB00008F93B /* GallaryVO.swift */; };
 		A9EE030E21C4E741000763AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE030D21C4E741000763AD /* LoginViewController.swift */; };
 		A9EE031021C4E77F000763AD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE030F21C4E77F000763AD /* RegisterViewController.swift */; };
 		A9EE031521C4ED38000763AD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE031321C4ED38000763AD /* CustomButton.swift */; };
@@ -83,6 +84,7 @@
 		A97DB75321C6252C002B9932 /* UserVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVO.swift; sourceTree = "<group>"; };
 		A97DB75521C627D3002B9932 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A9941EDA21C638560008F93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9941EDC21C64AB00008F93B /* GallaryVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryVO.swift; sourceTree = "<group>"; };
 		A9EE030D21C4E741000763AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A9EE030F21C4E77F000763AD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A9EE031321C4ED38000763AD /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				A97DB75321C6252C002B9932 /* UserVO.swift */,
+				A9941EDC21C64AB00008F93B /* GallaryVO.swift */,
 			);
 			path = vos;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				A97DB74B21C5198C002B9932 /* FavViewController.swift in Sources */,
 				A97DB74321C50CEB002B9932 /* BaseViewController.swift in Sources */,
 				A97DB74921C51951002B9932 /* HomeViewController.swift in Sources */,
+				A9941EDD21C64AB00008F93B /* GallaryVO.swift in Sources */,
 				A97DB74521C50E82002B9932 /* ProfileViewController.swift in Sources */,
 				A97DB75421C6252C002B9932 /* UserVO.swift in Sources */,
 				A97DB75621C627D3002B9932 /* NetworkManager.swift in Sources */,

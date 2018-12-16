@@ -92,9 +92,9 @@ class LoginViewController: BaseViewController, GIDSignInDelegate, GIDSignInUIDel
         DataModel.shared.login(email: txtEmail.text!, password: txtPassword.text!, success: {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
             self.present(vc, animated: true, completion: nil)
-        }) {
-            self.showAlertDialog(inputMessage: "Error Login")
-        }
+        }, failure: { (err) in
+            self.showAlertDialog(inputMessage: err )
+            })
     }
     
     

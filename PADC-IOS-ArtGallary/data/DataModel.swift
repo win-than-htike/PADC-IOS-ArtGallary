@@ -30,21 +30,24 @@ class DataModel {
     func register(user : UserVO) {
         let ref = Database.database().reference()
         ref.child("users").child(user.id).setValue(UserVO.parseToDictionary(user: user))
+        self.user = user
         
     }
     
     
-    func login(email : String, password : String, success : @escaping () -> Void, failure : @escaping () -> Void) {
+    func login(email : String, password : String, success : @escaping () -> Void, failure : @escaping (String) -> Void) {
         
         NetworkManager.shared.login(email: email, password: password, success: { (user) in
             
             self.user = user
             success()
             
-        }) {
-            failure()
+        }) { (err) in
+            failure(err)
         }
         
     }
+    
+   
     
 }
