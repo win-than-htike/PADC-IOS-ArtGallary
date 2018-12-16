@@ -369,7 +369,13 @@
                     <size key="freeformSize" width="375" height="1177"/>
                     <connections>
                         <outlet property="cvRelatedArtList" destination="A9e-wh-VWJ" id="66X-8S-h8b"/>
+                        <outlet property="ivArt" destination="gof-51-KDp" id="Mzh-0X-E5B"/>
+                        <outlet property="ivArtist" destination="TPV-7d-OIp" id="yyv-jH-2Vd"/>
                         <outlet property="ivFullScreen" destination="tqp-4N-iAb" id="FYo-Kc-nkM"/>
+                        <outlet property="lblArtTitle" destination="ol1-wh-iZs" id="k4E-HG-phS"/>
+                        <outlet property="lblArtistName" destination="ak5-ne-Pp1" id="oZ4-x7-AhG"/>
+                        <outlet property="lblDescription" destination="kT2-fP-maO" id="SL3-tS-oAF"/>
+                        <outlet property="lblMedium" destination="C17-dX-Kml" id="cAL-MV-A61"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWf-Ij-LLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -423,6 +429,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tmX-4k-O43"/>
                     </view>
+                    <connections>
+                        <outlet property="ivFull" destination="Jwl-bJ-U3i" id="tLu-n4-OH2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOK-gl-5tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

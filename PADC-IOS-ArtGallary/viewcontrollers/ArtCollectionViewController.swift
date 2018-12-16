@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 private let reuseIdentifier = "ArtCollectionViewCell"
 
 class ArtCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     @IBOutlet var cvArt: UICollectionView!
+    
+    private var artList: [ArtVO] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +25,29 @@ class ArtCollectionViewController: UICollectionViewController, UICollectionViewD
         CellRegsiterUtil.collectionCellRegister(nibName: reuseIdentifier, collectionView: self.cvArt)
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loadArts()
+    }
 
-    func clickDetail() {
+    func clickDetail(art: ArtVO) {
         let nv = self.storyboard?.instantiateViewController(withIdentifier: "ArtDetailViewController") as! UINavigationController
-        _ = nv.viewControllers[0] as! ArtDetailViewController
+        let cv = nv.viewControllers[0] as! ArtDetailViewController
+        cv.art = art
+        
         self.present(nv, animated: true, completion: nil)
+    }
+    
+    func loadArts() {
+        DataModel.shared.loadArts(success: { (arts) in
+            self.artList.removeAll()
+            self.artList = arts as! [ArtVO]
+            self.cvArt.reloadData()
+            print("ArtListCount --> \(self.artList.count)")
+            
+        }) { (err) in
+            print(err)
+        }
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -35,14 +56,17 @@ class ArtCollectionViewController: UICollectionViewController, UICollectionViewD
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return artList.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCollectionViewCell
     
         // Configure the cell
-    
+        if artList.count > 0 {
+            cell.ivArt.sd_setImage(with: URL(string: artList[indexPath.row].artImage), placeholderImage: UIImage(named: "dummy_cell"))
+        }
+        
         return cell
     }
     
@@ -56,6 +80,6 @@ class ArtCollectionViewController: UICollectionViewController, UICollectionViewD
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        clickDetail()
+        clickDetail(art: self.artList[indexPath.row])
     }
 }
