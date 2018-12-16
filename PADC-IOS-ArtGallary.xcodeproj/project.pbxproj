@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		757D8F9721C4DE290010C524 /* ArtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D8F9521C4DE290010C524 /* ArtCollectionViewCell.swift */; };
+		757D8F9821C4DE290010C524 /* ArtCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757D8F9621C4DE290010C524 /* ArtCollectionViewCell.xib */; };
+		757D8F9A21C4DF220010C524 /* CellRegisterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D8F9921C4DF220010C524 /* CellRegisterUtils.swift */; };
+		757D8F9D21C4DF740010C524 /* ArtCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D8F9C21C4DF740010C524 /* ArtCollectionViewController.swift */; };
+		7591A7C721C4E93400C0B844 /* Art.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757D8F9021C4DC360010C524 /* Art.storyboard */; };
+		7591A7C921C5028D00C0B844 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7C821C5028D00C0B844 /* ArtDetailViewController.swift */; };
+		7591A7CB21C50B5E00C0B844 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7CA21C50B5E00C0B844 /* FullScreenViewController.swift */; };
+		7591A7CE21C50F1900C0B844 /* ArtistCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7CC21C50F1900C0B844 /* ArtistCellCollectionViewCell.swift */; };
+		7591A7CF21C50F1900C0B844 /* ArtistCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7591A7CD21C50F1900C0B844 /* ArtistCellCollectionViewCell.xib */; };
+		7591A7D121C5105E00C0B844 /* ArtistCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7D021C5105E00C0B844 /* ArtistCollectionViewController.swift */; };
+		7591A7D321C51A8900C0B844 /* ArtistBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7D221C51A8900C0B844 /* ArtistBioViewController.swift */; };
+		7591A7D621C5D6E600C0B844 /* MuseumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7D421C5D6E600C0B844 /* MuseumCollectionViewCell.swift */; };
+		7591A7D721C5D6E600C0B844 /* MuseumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7591A7D521C5D6E600C0B844 /* MuseumCollectionViewCell.xib */; };
+		7591A7D921C5D93B00C0B844 /* Museum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7591A7D821C5D93B00C0B844 /* Museum.storyboard */; };
+		7591A7DD21C5DAF100C0B844 /* MuseumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7DC21C5DAF100C0B844 /* MuseumCollectionViewController.swift */; };
+		7591A7DF21C5E2D600C0B844 /* MuseumHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591A7DE21C5E2D600C0B844 /* MuseumHistoryViewController.swift */; };
 		99C090EE21B3B3AF000F6CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C090ED21B3B3AF000F6CAE /* AppDelegate.swift */; };
 		99C090F021B3B3AF000F6CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C090EF21B3B3AF000F6CAE /* ViewController.swift */; };
-		99C090F321B3B3AF000F6CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C090F121B3B3AF000F6CAE /* Main.storyboard */; };
+		99C090F321B3B3AF000F6CAE /* Artist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C090F121B3B3AF000F6CAE /* Artist.storyboard */; };
 		99C090F521B3B3B0000F6CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C090F421B3B3B0000F6CAE /* Assets.xcassets */; };
 		99C090F821B3B3B0000F6CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C090F621B3B3B0000F6CAE /* LaunchScreen.storyboard */; };
 		D7AC9BD39B800302FC5DB036 /* Pods_PADC_IOS_ArtGallary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902EE4005532DF3957BA78DC /* Pods_PADC_IOS_ArtGallary.framework */; };
@@ -18,11 +34,27 @@
 /* Begin PBXFileReference section */
 		171D8CED30166903C6893060 /* Pods-PADC-IOS-ArtGallary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-ArtGallary.release.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-ArtGallary/Pods-PADC-IOS-ArtGallary.release.xcconfig"; sourceTree = "<group>"; };
 		20BEB0304CCAF6821FFF563C /* Pods-PADC-IOS-ArtGallary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-ArtGallary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-ArtGallary/Pods-PADC-IOS-ArtGallary.debug.xcconfig"; sourceTree = "<group>"; };
+		757D8F9021C4DC360010C524 /* Art.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Art.storyboard; sourceTree = "<group>"; };
+		757D8F9521C4DE290010C524 /* ArtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewCell.swift; sourceTree = "<group>"; };
+		757D8F9621C4DE290010C524 /* ArtCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtCollectionViewCell.xib; sourceTree = "<group>"; };
+		757D8F9921C4DF220010C524 /* CellRegisterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegisterUtils.swift; sourceTree = "<group>"; };
+		757D8F9C21C4DF740010C524 /* ArtCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewController.swift; sourceTree = "<group>"; };
+		7591A7C821C5028D00C0B844 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
+		7591A7CA21C50B5E00C0B844 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
+		7591A7CC21C50F1900C0B844 /* ArtistCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		7591A7CD21C50F1900C0B844 /* ArtistCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		7591A7D021C5105E00C0B844 /* ArtistCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCollectionViewController.swift; sourceTree = "<group>"; };
+		7591A7D221C51A8900C0B844 /* ArtistBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistBioViewController.swift; sourceTree = "<group>"; };
+		7591A7D421C5D6E600C0B844 /* MuseumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumCollectionViewCell.swift; sourceTree = "<group>"; };
+		7591A7D521C5D6E600C0B844 /* MuseumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MuseumCollectionViewCell.xib; sourceTree = "<group>"; };
+		7591A7D821C5D93B00C0B844 /* Museum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Museum.storyboard; sourceTree = "<group>"; };
+		7591A7DC21C5DAF100C0B844 /* MuseumCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumCollectionViewController.swift; sourceTree = "<group>"; };
+		7591A7DE21C5E2D600C0B844 /* MuseumHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumHistoryViewController.swift; sourceTree = "<group>"; };
 		902EE4005532DF3957BA78DC /* Pods_PADC_IOS_ArtGallary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_ArtGallary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C090EA21B3B3AF000F6CAE /* PADC-IOS-ArtGallary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-ArtGallary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C090ED21B3B3AF000F6CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C090EF21B3B3AF000F6CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		99C090F221B3B3AF000F6CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99C090F221B3B3AF000F6CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Artist.storyboard; sourceTree = "<group>"; };
 		99C090F421B3B3B0000F6CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99C090F721B3B3B0000F6CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99C090F921B3B3B0000F6CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +72,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		757D8F8D21C4DB690010C524 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				99C090F121B3B3AF000F6CAE /* Artist.storyboard */,
+				757D8F9021C4DC360010C524 /* Art.storyboard */,
+				7591A7D821C5D93B00C0B844 /* Museum.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		757D8F9221C4DDBF0010C524 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				757D8F9521C4DE290010C524 /* ArtCollectionViewCell.swift */,
+				757D8F9621C4DE290010C524 /* ArtCollectionViewCell.xib */,
+				7591A7CC21C50F1900C0B844 /* ArtistCellCollectionViewCell.swift */,
+				7591A7CD21C50F1900C0B844 /* ArtistCellCollectionViewCell.xib */,
+				7591A7D421C5D6E600C0B844 /* MuseumCollectionViewCell.swift */,
+				7591A7D521C5D6E600C0B844 /* MuseumCollectionViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		757D8F9B21C4DF530010C524 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				757D8F9C21C4DF740010C524 /* ArtCollectionViewController.swift */,
+				7591A7C821C5028D00C0B844 /* ArtDetailViewController.swift */,
+				7591A7CA21C50B5E00C0B844 /* FullScreenViewController.swift */,
+				7591A7D021C5105E00C0B844 /* ArtistCollectionViewController.swift */,
+				7591A7D221C51A8900C0B844 /* ArtistBioViewController.swift */,
+				7591A7DC21C5DAF100C0B844 /* MuseumCollectionViewController.swift */,
+				7591A7DE21C5E2D600C0B844 /* MuseumHistoryViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
 		99C090E121B3B3AF000F6CAE = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +130,15 @@
 		99C090EC21B3B3AF000F6CAE /* PADC-IOS-ArtGallary */ = {
 			isa = PBXGroup;
 			children = (
+				757D8F9B21C4DF530010C524 /* viewcontrollers */,
+				757D8F9221C4DDBF0010C524 /* cells */,
+				757D8F8D21C4DB690010C524 /* storyboards */,
 				99C090ED21B3B3AF000F6CAE /* AppDelegate.swift */,
 				99C090EF21B3B3AF000F6CAE /* ViewController.swift */,
-				99C090F121B3B3AF000F6CAE /* Main.storyboard */,
 				99C090F421B3B3B0000F6CAE /* Assets.xcassets */,
 				99C090F621B3B3B0000F6CAE /* LaunchScreen.storyboard */,
 				99C090F921B3B3B0000F6CAE /* Info.plist */,
+				757D8F9921C4DF220010C524 /* CellRegisterUtils.swift */,
 			);
 			path = "PADC-IOS-ArtGallary";
 			sourceTree = "<group>";
@@ -149,9 +221,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7591A7CF21C50F1900C0B844 /* ArtistCellCollectionViewCell.xib in Resources */,
+				7591A7D721C5D6E600C0B844 /* MuseumCollectionViewCell.xib in Resources */,
 				99C090F821B3B3B0000F6CAE /* LaunchScreen.storyboard in Resources */,
+				757D8F9821C4DE290010C524 /* ArtCollectionViewCell.xib in Resources */,
+				7591A7D921C5D93B00C0B844 /* Museum.storyboard in Resources */,
+				7591A7C721C4E93400C0B844 /* Art.storyboard in Resources */,
 				99C090F521B3B3B0000F6CAE /* Assets.xcassets in Resources */,
-				99C090F321B3B3AF000F6CAE /* Main.storyboard in Resources */,
+				99C090F321B3B3AF000F6CAE /* Artist.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,20 +330,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7591A7D121C5105E00C0B844 /* ArtistCollectionViewController.swift in Sources */,
+				7591A7D621C5D6E600C0B844 /* MuseumCollectionViewCell.swift in Sources */,
+				7591A7DD21C5DAF100C0B844 /* MuseumCollectionViewController.swift in Sources */,
+				7591A7DF21C5E2D600C0B844 /* MuseumHistoryViewController.swift in Sources */,
+				757D8F9A21C4DF220010C524 /* CellRegisterUtils.swift in Sources */,
+				7591A7D321C51A8900C0B844 /* ArtistBioViewController.swift in Sources */,
 				99C090F021B3B3AF000F6CAE /* ViewController.swift in Sources */,
 				99C090EE21B3B3AF000F6CAE /* AppDelegate.swift in Sources */,
+				757D8F9D21C4DF740010C524 /* ArtCollectionViewController.swift in Sources */,
+				757D8F9721C4DE290010C524 /* ArtCollectionViewCell.swift in Sources */,
+				7591A7CB21C50B5E00C0B844 /* FullScreenViewController.swift in Sources */,
+				7591A7C921C5028D00C0B844 /* ArtDetailViewController.swift in Sources */,
+				7591A7CE21C50F1900C0B844 /* ArtistCellCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		99C090F121B3B3AF000F6CAE /* Main.storyboard */ = {
+		99C090F121B3B3AF000F6CAE /* Artist.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				99C090F221B3B3AF000F6CAE /* Base */,
 			);
-			name = Main.storyboard;
+			name = Artist.storyboard;
 			sourceTree = "<group>";
 		};
 		99C090F621B3B3B0000F6CAE /* LaunchScreen.storyboard */ = {
